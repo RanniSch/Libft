@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 12:23:44 by rschlott          #+#    #+#             */
-/*   Updated: 2022/05/16 15:03:52 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/05/16 17:12:32 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
+	if (!s1)
+		return (NULL);
+	if (!s2)
+		return (NULL);
 	dest = malloc(1 * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	i = 0;
 	j = 0;
