@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 12:24:09 by rschlott          #+#    #+#             */
-/*   Updated: 2022/05/16 17:23:46 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/05/16 17:27:02 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if (!big)
-		return (NULL);
 	if (!little || !little[0])
 		return ((char *)big);
 	i = 0;
