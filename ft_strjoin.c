@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 12:23:44 by rschlott          #+#    #+#             */
-/*   Updated: 2022/05/16 17:38:40 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/05/16 17:48:43 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (dest == NULL)
 		return (NULL);
-	else
+	while (*(s1 + i) != 0)
 	{
-		while (*(s1 + i) != 0)
-		{
-			*(dest + i) = *(s1 + i);
-			i++;
-		}
-		while (*(s2 + j) != 0)
-		{
-			*(dest + i + j) = *(s2 + j);
-			j++;
-		}
-		*(dest + i + j) = '\0';
-		return (dest);
+		*(dest + i) = *(s1 + i);
+		i++;
 	}
+	while (*(s2 + j) != 0)
+	{
+		*(dest + i + j) = *(s2 + j);
+		j++;
+	}
+	*(dest + i + j) = '\0';
+	return (dest);
 }
