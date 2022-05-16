@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 12:22:14 by rschlott          #+#    #+#             */
-/*   Updated: 2022/05/16 15:18:20 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/05/16 18:42:54 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		nmemb = 1;
 		size = 1;
 	}
-	if (nmemb >= SIZE_MAX || size >= SIZE_MAX)
+	if (nmemb >= __SIZE_MAX__ || size >= __SIZE_MAX__)
 		return (0);
 	ptr = malloc(nmemb * size);
 	if (!ptr)
