@@ -6,7 +6,7 @@
 /*   By: rschlott <rschlott@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/29 12:23:05 by rschlott          #+#    #+#             */
-/*   Updated: 2022/05/16 17:37:31 by rschlott         ###   ########.fr       */
+/*   Updated: 2022/05/16 17:42:31 by rschlott         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	d = (char *)dest;
 	s = (char *)src;
-	if (!dest || !src)
-		return (NULL);
 	if (d > s)
 	{
 		while (n > 0)
