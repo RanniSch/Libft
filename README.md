@@ -24,7 +24,5 @@ int main()
 Run ```make``` (to run the Makefile that will compile the source code and create the library).<br>
 You should now see a **libft.a** file and some object files (.o).<br>
 To clean up (removing the .o files), call ```make clean```.<br> <br>
-
 Compile your .c files with gcc using ```gcc main.c libft.a```. You need to include the **libft.a** to tell the file which library it is using.<br><br>
-
 Now you can run the code using ```./a.out```.<br><br>
