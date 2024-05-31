@@ -25,6 +25,6 @@ Run ```make``` (to run the Makefile that will compile the source code and create
 You should now see a **libft.a** file and some object files (.o).<br>
 To clean up (removing the .o files), call ```make clean```.<br> <br>
 Compile your .c files with gcc using ```gcc main.c libft.a```. You need to include the **libft.a** to tell the file which library it is using.<br><br>
-Now you can run the code using ```./a.out```.<br>
+Now you can run the code using ```./a.out```.<br><br>
 ![libft-01](https://github.com/RanniSch/Libft/assets/104382315/ab7a64a0-b793-4f38-993d-3257c0eee34a)
 
